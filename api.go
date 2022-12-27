@@ -1,11 +1,7 @@
-// package cliqr ...
+// package cliqr provides a minimal static package to convert strings into console QRcodes
 package cliqr
 
-import (
-// "os"
-)
-
-// QR ...
+// QR converts an string into an auto-sized console qr code
 func QR(in string) string {
 	l := len(in)
 	switch {
@@ -20,7 +16,7 @@ func QR(in string) string {
 	}
 }
 
-// QRbig ...
+// QRbig tries always to scale big
 func QRbig(buf string) string {
 	qr, err := newQR(buf, low)
 	if err != nil {
@@ -41,7 +37,7 @@ func QRbig(buf string) string {
 	return buf
 }
 
-// QRsmall ...
+// QRsmall tries always to scale small
 func QRsmall(buf string) string {
 	qr, err := newQR(buf, low)
 	if err != nil {

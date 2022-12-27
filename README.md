@@ -9,8 +9,9 @@ Display QR codes on your console to secure transfer locally:
  - wifi creds
  - code snippets
 
-- boiled-down minmal static backend fork of [skip2/go-qrcode](https://github.com/skip2/go-qrcode) (***ALL CREDIT GOES THERE!***)
-- small, fast, 100% external dependency free, use as app or api (see api.go)
+- minimal code, static, dependency free 
+- backend is a boiled-down fork of [skip2/go-qrcode](https://github.com/skip2/go-qrcode) (***ALL CREDIT GOES THERE!***)
+- 100% pure go, stdlib only, use as app or api (see api.go)
 
 # INSTALL
 

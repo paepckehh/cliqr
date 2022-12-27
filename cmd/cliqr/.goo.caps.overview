@@ -23,5 +23,4 @@
 ├── [internal]
 └── [external]
     ├── [paepcke.de/cliqr]
-    ├── [paepcke.de/cliqr/cmd/cliqr]
-    └── [paepcke.de/lib/cqr]
+    └── [paepcke.de/cliqr/cmd/cliqr]
