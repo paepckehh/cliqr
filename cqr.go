@@ -357,8 +357,6 @@ func (d *dataEncoder) modeIndicator(dataMode dataMode) *bitSet {
 	default:
 		panic("Unknown data mode")
 	}
-
-	return nil
 }
 
 func (d *dataEncoder) charCountBits(dataMode dataMode) int {
@@ -372,8 +370,6 @@ func (d *dataEncoder) charCountBits(dataMode dataMode) int {
 	default:
 		panic("Unknown data mode")
 	}
-
-	return 0
 }
 
 func (d *dataEncoder) encodedLength(dataMode dataMode, n int) (int, error) {
@@ -438,8 +434,6 @@ func encodeAlphanumericCharacter(v byte) uint32 {
 	default:
 		panic("encodeAlphanumericCharacter() ")
 	}
-
-	return 0
 }
 
 func newQR(content string, level recoveryLevel) (*qrCode, error) {
