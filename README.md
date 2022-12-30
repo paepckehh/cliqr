@@ -19,7 +19,7 @@ Display QR codes on your console to secure transfer locally:
 go install paepcke.de/cliqr/cmd/cliqr@latest
 ```
 
-# DOWNLOAD (prebuild)
+### DOWNLOAD (prebuild)
 
 [github.com/paepckehh/cliqr/releases](https://github.com/paepckehh/cliqr/releases)
 
