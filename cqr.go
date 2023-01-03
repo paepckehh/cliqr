@@ -132,8 +132,7 @@ type (
 )
 
 func newDataEncoder(t dataEncoderType) *dataEncoder {
-	d := &dataEncoder{}
-
+	var d *dataEncoder
 	switch t {
 	case dataEncoderType1To9:
 		d = &dataEncoder{
@@ -217,7 +216,7 @@ func (d *dataEncoder) classifyDataModes() dataMode {
 	highestRequiredMode := mode
 
 	for i, v := range d.data {
-		newMode := dataModeNone
+		var newMode dataMode
 		switch {
 		case v >= 0x30 && v <= 0x39:
 			newMode = dataModeNumeric
