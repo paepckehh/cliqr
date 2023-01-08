@@ -21,3 +21,5 @@
 Makefile
 doc
 vendor
+cliqr
+cmd/cliqr/cliqr
