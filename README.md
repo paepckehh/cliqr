@@ -1,6 +1,6 @@
 # OVERVIEW 
 
-[paepche.de/cliqr](https://paepcke.de/cliqr)
+[paepche.de/cliqr](https://paepcke.de/cliqr/)
 
 Display QR codes on your console to secure transfer locally:  
  - keys, secrets, access token
@@ -27,7 +27,7 @@ go install paepcke.de/cliqr/cmd/cliqr@latest
 
 ```Shell 
 
-cliqr "MAILTO:potus@wh.gov"
+cliqr "mailto:potus@wh.gov"
 [...]
 
 cliqr "WIFI:S:$my-ssid;T:WPA;P:$my-password"
