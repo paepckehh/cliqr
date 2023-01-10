@@ -44,6 +44,10 @@ echo $BTC | cliqr
 
 ```
 
+# DOCS
+
+[pkg.go.dev/paepcke.de/cliqr](https://pkg.go.dev/paepcke.de/cliqr)
+
 # CONTRIBUTION
 
 Yes, Please! PRs Welcome! 
