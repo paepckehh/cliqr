@@ -1,4 +1,5 @@
 # OVERVIEW 
+[![Go Report Card](https://goreportcard.com/badge/paepcke.de/cliqr)](https://goreportcard.com/report/paepcke.de/cliqr)
 
 [paepche.de/cliqr](https://paepcke.de/cliqr/)
 
