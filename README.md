@@ -3,12 +3,14 @@
 
 [paepche.de/cliqr](https://paepcke.de/cliqr/)
 
-Display QR codes on your console to secure transfer locally:  
- - keys, secrets, access token
- - (small-ec-based) certificates
- - urls, uris
- - wifi creds
- - code snippets
+Display QR codes on your console to secure transfer locally:
+- keys, secrets, access token
+- (small-ec-based) certificates
+- urls, uris
+- wifi creds
+- code fragments
+
+# KEYPOINTS
 
 - minimal code, static, dependency free 
 - backend is a boiled-down fork of [skip2/go-qrcode](https://github.com/skip2/go-qrcode) (***ALL CREDIT GOES THERE!***)
