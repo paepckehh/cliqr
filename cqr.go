@@ -100,7 +100,7 @@ type (
 		numByteCharCountBits         int
 		data                         []byte
 		actual                       []segment
-		optimised                    []segment
+		optimized                    []segment
 	}
 	qrCode struct {
 		Content         string
@@ -177,7 +177,7 @@ func newDataEncoder(t dataEncoderType) *dataEncoder {
 func (d *dataEncoder) encode(data []byte) (*bitSet, error) {
 	d.data = data
 	d.actual = nil
-	d.optimised = nil
+	d.optimized = nil
 
 	if len(data) == 0 {
 		return nil, errors.New("no data to encode")
@@ -188,7 +188,7 @@ func (d *dataEncoder) encode(data []byte) (*bitSet, error) {
 		return nil, err
 	}
 	optimizedLength := 0
-	for _, s := range d.optimised {
+	for _, s := range d.optimized {
 		length, err := d.encodedLength(s.dataMode, len(s.data))
 		if err != nil {
 			return nil, err
@@ -200,10 +200,10 @@ func (d *dataEncoder) encode(data []byte) (*bitSet, error) {
 		return nil, err
 	}
 	if singleByteSegmentLength <= optimizedLength {
-		d.optimised = []segment{{dataMode: highestRequiredMode, data: d.data}}
+		d.optimized = []segment{{dataMode: highestRequiredMode, data: d.data}}
 	}
 	encoded := bitsetnew()
-	for _, s := range d.optimised {
+	for _, s := range d.optimized {
 		d.encodeDataRaw(s.data, s.dataMode, encoded)
 	}
 
@@ -284,16 +284,16 @@ func (d *dataEncoder) optimiseDataModes() error {
 			}
 		}
 
-		optimised := segment{
+		optimized := segment{
 			dataMode: mode,
 			data:     make([]byte, 0, numChars),
 		}
 
 		for k := i; k < j; k++ {
-			optimised.data = append(optimised.data, d.actual[k].data...)
+			optimized.data = append(optimized.data, d.actual[k].data...)
 		}
 
-		d.optimised = append(d.optimised, optimised)
+		d.optimized = append(d.optimized, optimized)
 
 		i = j
 	}
