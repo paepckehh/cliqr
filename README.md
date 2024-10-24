@@ -1,5 +1,9 @@
 # OVERVIEW
-[![Go Reference](https://pkg.go.dev/badge/paepcke.de/cliqr.svg)](https://pkg.go.dev/paepcke.de/cliqr) [![Go Report Card](https://goreportcard.com/badge/paepcke.de/cliqr)](https://goreportcard.com/report/paepcke.de/cliqr) [![Go Build](https://github.com/paepckehh/cliqr/actions/workflows/golang.yml/badge.svg)](https://github.com/paepckehh/cliqr/actions/workflows/golang.yml)
+[![Go Reference](https://pkg.go.dev/badge/paepcke.de/cliqr.svg)](https://pkg.go.dev/paepcke.de/cliqr)
+[![Go Report Card](https://goreportcard.com/badge/paepcke.de/cliqr)](https://goreportcard.com/report/paepcke.de/cliqr)
+[![Go Build](https://github.com/paepckehh/cliqr/actions/workflows/golang.yml/badge.svg)](https://github.com/paepckehh/cliqr/actions/workflows/golang.yml)
+[![License](https://img.shields.io/github/license/paepckehh/cliqr)](https://github.com/paepckehh/cliqr/blob/master/LICENSE)
+[![SemVer](https://img.shields.io/github/v/release/paepckehh/cliqr)](https://github.com/paepckehh/cliqr/releases/latest)
 
 [paepcke.de/cliqr](https://paepcke.de/cliqr/)
 
