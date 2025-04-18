@@ -3,9 +3,9 @@ all:
 
 check: 
 	gofmt -w -s .
+	go vet .
+	golangci-lint run
 	staticcheck
-
-clean:
 
 examples:
 	go run main.go github.com
