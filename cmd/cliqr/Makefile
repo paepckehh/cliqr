@@ -5,7 +5,7 @@ check:
 	gofmt -w -s .
 	go vet .
 	golangci-lint run
-	staticcheck
+	CGO_ENABLED=0 staticcheck
 
 examples:
 	go run main.go github.com
