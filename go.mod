@@ -1,3 +1,3 @@
 module paepcke.de/cliqr
 
-go 1.25.5
+go 1.27.1
